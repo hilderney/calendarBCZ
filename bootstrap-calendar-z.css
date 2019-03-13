@@ -1,0 +1,149 @@
+﻿/*!
+ * Bootstrap Calendar Z
+ * version: 0.0.1
+ * created by: hilderney zapf
+ * dependencies: Bootstrap 4.3.1
+ */
+
+/*!
+ * Bootstrap v4.3.1 (https://getbootstrap.com/)
+ * Copyright 2011-2019 The Bootstrap Authors
+ * Copyright 2011-2019 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+.bootstrap-calendar-z{
+    min-width: 272px;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 420px) {
+    .bootstrap-calendar-z{
+        margin: 0;
+    }
+}
+.bcz{
+
+}
+
+.bcz-col {
+    display: inline-block;
+    max-width: 100%;
+    position: relative;
+    width: calc(100% / 7);
+    height: 45px;
+    padding-top: 0;
+}
+.bcz-wrapper div:not(.bcz-heading) .bcz-col .bcz-day-header {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin: 8px auto;
+    background-color: var(--main-transparent-color);
+}
+.bcz-wrapper div:not(.bcz-heading) .bcz-col .bcz-day-alert {
+    display: block;
+    width: 16px !important;
+    height: 16px;
+    background: transparent;
+    border-radius: 50%;
+    position: relative;
+    top: -29px !important;
+    right: -21px;
+}
+.bcz-wrapper div:not(.bcz-heading) .bcz-col.notification .bcz-day-header {
+    background-color: var(--main-transparent-dark-color);
+}
+.bcz-wrapper div:not(.bcz-heading) .bcz-col.today .bcz-day-header {
+    background-color: var(--main-primary-color);
+    color: var(--main-white-color);
+    font-weight: 700;
+}
+.bcz-wrapper div:not(.bcz-heading) .bcz-col.notification .bcz-day-alert {
+    background: var(--main-danger-color);
+}
+.bcz-wrapper div:not(.bcz-heading) .bcz-col .bcz-day-header span {
+    position: relative;
+    top: 2px;
+}
+.bcz-day-alert {
+    font-size: 10px;
+    color: var(--main-white-color);
+}
+
+.bcz-not-month {
+    color: var(--main-light-color);
+}
+
+.bcz-col > div {
+    display: block;
+    width: 100%;
+}
+
+.bcz-wrapper{
+
+}
+
+.bcz-wrapper > div {
+    display: inline-flex;
+    width: 100%;
+}
+
+.group-btn-group-fix {
+    width: 50%;
+    margin: 0 !important;
+}
+
+.btn-group-full-fix {
+    width:100%;
+}
+
+.group-btn-group-fix select {
+    padding: 0 30px;
+    border: 0;
+    border-radius: 0;
+}
+
+.bcz-controller{
+
+}
+
+.bcz-heading, .bcz-heading > .bcz-col  {
+    height: 40px;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.bcz-month, .bcz-month > .bcz-col  {
+    height: 40px;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.bcz-month .bcz-col {
+    display: inline-block;
+    max-width: 100%;
+    position: relative;
+    width: calc(100% / 4);
+    height: 45px;
+    padding-top: 0;
+}
+.bcz-col > div {
+    text-align: center;
+}
+
+.bcz-first-week, .bcz-second-wee, .bcz-third-wee, .bcz-fourth-wee, .bcz-fifth-week { }
+.bcz-c1 { }
+.bcz-c2 { }
+.bcz-c3 { }
+.bcz-c4 { }
+.bcz-c5 { }
+.bcz-c6 { }
+.bcz-c7 { }
+.bcz-1wc{ }
+.bcz-2wc{ }
+.bcz-3wc{ }
+.bcz-4wc{ }
+.bcz-5wc{ }
+.bcz-6wc{ }
