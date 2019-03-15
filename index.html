@@ -60,49 +60,6 @@
                         </div>
                     </div>
 
-                    @{
-                        string weekStartsOn = Model.Calendario.Dias[0].DiaDaSemanaAbreviado;
-                        int trimDaysOnStart = 0;
-
-                        @switch (weekStartsOn)
-                        {
-                            case "DOM":
-                                trimDaysOnStart = 0;
-                                break;
-                            case "SEG":
-                                trimDaysOnStart = 1;
-                                break;
-                            case "TER":
-                                trimDaysOnStart = 2;
-                                break;
-                            case "QUA":
-                                trimDaysOnStart = 3;
-                                break;
-                            case "QUI":
-                                trimDaysOnStart = 4;
-                                break;
-                            case "SEX":
-                                trimDaysOnStart = 5;
-                                break;
-                            case "SAB":
-                                trimDaysOnStart = 6;
-                                break;
-                        }
-
-                        Console.WriteLine(trimDaysOnStart);
-
-                        for (int i = 0; i < Model.Calendario.Dias.Count; i++)
-                                {
-
-                            <div class="bcz-col bcz-1wc bcz-c1">
-                                <div class="bcz-day-header">
-                                    <span class="bcz-not-month"> @Model.Calendario.Dias[i].DiaDaSemana </span>
-                                </div>
-                            </div>
-
-                        }
-                    }
-
                     <div class="bcz-first-week">
                         <div class="bcz-col bcz-1wc bcz-c1">
                             <div class="bcz-day-header">
